@@ -1,4 +1,5 @@
 # Cornerston Clothing Items
+## This is not a fully functional script. It is mostly test code. 
 
 An ox inventory based script to make clothing an item. Development and testing was done using Illinieum Appearance. 
 
