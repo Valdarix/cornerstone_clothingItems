@@ -1,8 +1,9 @@
 fx_version 'cerulean'
 game 'gta5'
 
-description 'Clothing Test'
-version '0.1.0'
+author 'Cornerstone Scripts'
+description 'Clothing Items for Ox Inventory'
+version '1.0.0'
 
 ox_lib 'locale'
 
