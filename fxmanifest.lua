@@ -2,7 +2,8 @@ fx_version 'cerulean'
 game 'gta5'
 
 author 'Cornerstone Scripts'
-description 'Clothing Items for Ox Inventory'
+name 'Cornerstone - Clothing Items'
+description 'Clothing as ox_inventory items, with the appearance of each item stored in its metadata.'
 version '1.0.2'
 
 ox_lib 'locale'
