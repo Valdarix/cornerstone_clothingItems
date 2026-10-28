@@ -1,0 +1,27 @@
+name: Create release when the commit message contains [release]
+on:
+  push:
+    branches: [ main, master ]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    if: contains(github.event.head_commit.message, '[release]')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Extract version
+        id: get_version
+        run: python scripts/bump_version.py --current
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.get_version.outputs.version }}
+          name: v${{ steps.get_version.outputs.version }}
+          body: |
+            Automated release for version v${{ steps.get_version.outputs.version }}
