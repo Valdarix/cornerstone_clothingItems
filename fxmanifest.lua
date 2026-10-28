@@ -3,7 +3,7 @@ game 'gta5'
 
 author 'Cornerstone Scripts'
 description 'Clothing Items for Ox Inventory'
-version '1.0.0'
+version '1.0.1'
 
 ox_lib 'locale'
 
